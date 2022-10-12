@@ -18,11 +18,15 @@ import static com.vietdh.mathutil.core.MathUtil.*;
 @RunWith(value = Parameterized.class)
 public class MathUtilDDTTest {
    
-    //1. Chuẩn bị bộ data, là mảng 2 chiều, 2 cột ứng với Expected và n dòng ứng với các test case
-    // Mảng object, số thì dùng Wrapper class - gói các primitive 
+  
     
     @Parameterized.Parameters
     public static Object[][] initData(){
+          //1. Chuẩn bị bộ data, là mảng 2 chiều, 2 cột ứng với Expected và n dòng ứng với các test case
+    // Mảng object, số thì dùng Wrapper class - gói các primitive 
+//    Ta sẽ map/ánh xạ các cột của mỗi dòng, ví dụ dòng đầu tiên
+//    có 2 cột là 1 0 -> ta sẽ ánh xạ 1 vào biến expected. 0 vào biến n
+//    tương tự cho các dòng còn lại
         int a[] = {5,10,15,20,25};
         int b[][] = {{1, 0}, {1, 1}, {2, 2}, {6, 3}, {24, 4}, {120, 5}, {720,6}};
         
@@ -33,9 +37,7 @@ public class MathUtilDDTTest {
         
     }
     
-//    Ta sẽ map/ánh xạ các cột của mỗi dòng, ví dụ dòng đầu tiên
-//    có 2 cột là 1 0 -> ta sẽ ánh xạ 1 vào biến expected. 0 vào biến n
-//    tương tự cho các dòng còn lại
+
      @Parameterized.Parameter(value = 0)
      public long expected; //map vào cột 0 của mảng
      

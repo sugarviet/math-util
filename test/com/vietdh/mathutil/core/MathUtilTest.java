@@ -48,12 +48,12 @@ public class MathUtilTest {
     }
     
 //    @Test(expected = IllegalArgumentException.class)
-        @Test(expected = Exception.class)
-    public  void testFactorialGivenWrongArgumentThrowsException(){
-        //Dua data ca chon, n am, n qua lon
-        //Thay ngoai le mung roi nuoc mat, xuat hien nhu ki vong -> passed test cased
-        MathUtil.getFactorial(-5);
-    }
+//        @Test(expected = Exception.class)
+//    public  void testFactorialGivenWrongArgumentThrowsException(){
+//        //Dua data ca chon, n am, n qua lon
+//        //Thay ngoai le mung roi nuoc mat, xuat hien nhu ki vong -> passed test cased
+//        MathUtil.getFactorial(-5);
+//    }
     
 }
 
